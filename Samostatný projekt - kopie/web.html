@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixel Survival: Fireball Wars</title>
+<link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+<header>
+    Pixel Survival: Fireball Wars
+</header>
+
+<main>
+    <section>
+        <h2>How it works</h2>
+        <p>
+            Survive waves of zombies by moving with WASD and casting fireballs automatically every few seconds. Gain XP and level up as you kill zombies. The faster you kill, the faster your fireballs spawn!
+        </p>
+    </section>
+
+    <section>
+        <h2 class="clickable" onclick="toggleContent('controlsContent')">Controls</h2>
+        <div id="controlsContent">
+            <p>Move: W A S D</p>
+            <p>Fireball: Automatically targets nearest zombie every few seconds</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="clickable" onclick="toggleContent('leaderboardsContent')">Leaderboards</h2>
+        <div id="leaderboardsContent">
+            <p>Under Construction</p>
+        </div>
+    </section>
+</main>
+
+<script>
+function toggleContent(id) {
+    const el = document.getElementById(id);
+    if (el.style.display === "none" || el.style.display === "") {
+        el.style.display = "block";
+    } else {
+        el.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
